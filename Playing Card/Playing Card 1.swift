@@ -14,10 +14,13 @@ struct Playing_Card_1: View {
             Color.white
             .ignoresSafeArea()
             
-            VStack{
+            VStack(spacing:0){
                 
                 ZStack{
                     
+                    Color.teal
+                        .ignoresSafeArea()
+                        .frame(height:100)
                     
                     Text("Title")
                         .font(Font.custom("Helvetica", size:50))
