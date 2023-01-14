@@ -18,10 +18,6 @@ struct Playing_Card_1: View {
                 
                 ZStack{
                     
-                    Color.teal
-                        .ignoresSafeArea()
-                        .frame(height:100)
-                    
                     Text("Title")
                         .font(Font.custom("Helvetica", size:50))
                         .bold()
@@ -43,6 +39,13 @@ struct Playing_Card_1: View {
                         .padding()
                         .frame(height:400)
                     
+                    Image("BirdLogo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height:100)
+                        .padding()
+                    
+                    
                     
                 }
                 
@@ -55,21 +58,24 @@ struct Playing_Card_1: View {
                         Text("Item 1")
                         Text("Item 2")
                         Text("Item 3")
-                        Text("Item 4")
                     }
                         
                     List{
                         Text("Item 1")
                         Text("Item 2")
                         Text("Item 3")
-                        Text("Item 4")
                     }
                             
                 }
+                Spacer()
+              
                 
-                Text("Title Here")
+                Text("Extra Information")
                     .font(.title2)
                     .bold()
+                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula lacus, feugiat ac ante nec, finibus lacinia urna.")
+                
+                    .padding()
             }
             .listStyle(.plain)
             .listRowInsets(EdgeInsets(top:0 , leading:100, bottom: 0, trailing: 0))
