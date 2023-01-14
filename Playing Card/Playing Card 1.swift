@@ -37,10 +37,14 @@ struct Playing_Card_1: View {
                         .padding()
                         .frame(height: 400)
                     
-                    Color.white
+                    Image("CanadaGoose")
+                        .resizable()
                         .padding()
                         .padding()
                         .frame(height:400)
+                       
+                        
+                       
                     
                     
                     
