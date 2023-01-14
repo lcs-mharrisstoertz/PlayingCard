@@ -39,11 +39,19 @@ struct Playing_Card_1: View {
                         .padding()
                         .frame(height:400)
                     
-                    Image("BirdLogo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height:100)
-                        .padding()
+                    HStack{
+                        Spacer()
+                        
+                        VStack{
+                            Spacer()
+                            
+                            Image("BirdLogo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height:110)
+                                .padding()
+                        }
+                    }
                     
                     
                     
