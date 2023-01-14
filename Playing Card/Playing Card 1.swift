@@ -12,7 +12,7 @@ struct Playing_Card_1: View {
         
         ZStack{
             Color.white
-            .ignoresSafeArea()
+                .ignoresSafeArea()
             
             VStack(spacing:0){
                 
@@ -42,24 +42,44 @@ struct Playing_Card_1: View {
                         .padding()
                         .padding()
                         .frame(height:400)
-                       
-                        
-                       
-                    
-                    
                     
                     
                 }
-                Spacer()
                 
+                Text("Bird Info")
+                    .font(.title)
+                    .bold()
+                HStack{
+                    
+                    List{
+                        Text("Item 1")
+                        Text("Item 2")
+                        Text("Item 3")
+                        Text("Item 4")
+                    }
+                        
+                    List{
+                        Text("Item 1")
+                        Text("Item 2")
+                        Text("Item 3")
+                        Text("Item 4")
+                    }
+                            
+                }
                 
+                Text("Title Here")
+                    .font(.title2)
+                    .bold()
             }
+            .listStyle(.plain)
+            .listRowInsets(EdgeInsets(top:0 , leading:100, bottom: 0, trailing: 0))
         }
     }
 }
-
-struct Playing_Card_1_Previews: PreviewProvider {
-    static var previews: some View {
-        Playing_Card_1()
+    
+    struct Playing_Card_1_Previews: PreviewProvider {
+        static var previews: some View {
+            Playing_Card_1()
+        }
     }
-}
+
