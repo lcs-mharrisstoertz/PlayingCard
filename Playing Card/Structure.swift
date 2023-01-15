@@ -114,4 +114,7 @@ struct Bird {
     let diet: String
     let appearance: String
     let favoriteActivity: String
+    let funFact: String
+    let imageName: String
+}
     
