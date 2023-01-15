@@ -99,7 +99,8 @@ struct DetailView: View {
                 .listStyle(.plain)
                 .listRowInsets(EdgeInsets(top:0 , leading:100, bottom: 0, trailing: 0))
             }
-        }    }
+        }
+    }
 }
 
 struct DetailView_Previews: PreviewProvider {

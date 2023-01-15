@@ -1,5 +1,5 @@
 //
-//  Structure.swift
+//  BirdTradingCard.swift
 //  Playing Card
 //
 //  Created by Morgan Harris-Stoertz on 2023-01-15.
@@ -7,10 +7,23 @@
 
 import SwiftUI
 
-struct Structure: View {
+struct BirdTradingCard {
+//MARK: stored properties
+
+    let birdType: String
+    let habitat: String
+    let diet: String
+    let appearance: String
+    let favoriteActivity: String
+    let funFact: String
+    let imageName: String
+    
+//MARK: computed properties
+    
     var body: some View {
+
         VStack{
-            Text("Canada Goose")
+            Text(birdType)
                 .font(Font.custom("Helvetica", size:35))
                 .bold()
             
@@ -25,7 +38,7 @@ struct Structure: View {
                         Color.indigo
                             .padding()
                         
-                        Image("CanadaGoose")
+                        Image(imageName)
                             .resizable()
                             .padding()
                             .padding()
@@ -65,17 +78,17 @@ struct Structure: View {
                                 
                                 VStack{
                                     
-                                    Text("Habitat: Temperate regions of North America")
+                                    Text(habitat)
                                     Spacer()
-                                    Text("Diet: Aquatic plants, grains, and berries ")
+                                    Text(diet)
                                     
                                 }
                                 .padding()
                                 
                                 VStack {
-                                    Text("Appearance: Large black, white, and brown goose.")
+                                    Text(appearance)
                                     Spacer()
-                                    Text("Favorite Activity: Terrorizing people")
+                                    Text(favoriteActivity)
                                 }
                                 .padding()
                                 
@@ -87,7 +100,7 @@ struct Structure: View {
                             Text("Fun Fact")
                                 .font(.title2)
                                 .bold()
-                            Text("Canada geese can travel 1,500 miles in a day if the weather permits.")
+                            Text(funFact)
                             
                                 .padding()
                             Spacer()
@@ -102,29 +115,16 @@ struct Structure: View {
         }
     }
 }
-struct Structure_Previews: PreviewProvider {
+
+struct BirdTradingCard_Previews: PreviewProvider {
     static var previews: some View {
-        Structure()
+        
+       let canadaGoose = BirdTradingCard (birdType: "Canada Goose",
+                        habitat: "Temperate regions of North America",
+                        diet: "Aquatic plants, grains, and berries",
+                        appearance: "Large black, white, and brown goose",
+                        favoriteActivity: "Terrorizing people",
+                        funFact: "Canada geese can travel 1,500 miles in a day if the weather permits.",
+                        imageName: "CanadaGoose")
     }
-    
-    
 }
-
-struct BirdTradingCard {
-    let birdType: String
-    let habitat: String
-    let diet: String
-    let appearance: String
-    let favoriteActivity: String
-    let funFact: String
-    let imageName: String
-}
-    
-
-let canadaGoose = BirdTradingCard(birdType: "Canada Goose",
-                       habitat: "Temperate regions of North America",
-                       diet: "Aquatic plants, grains, and berries",
-                       appearance: "Large black, white, and brown goose",
-                       favoriteActivity: "Terrorizing people",
-                       funFact: "Canada geese can travel 1,500 miles in a day if the weather permits.",
-                       imageName: "CanadaGoose")
