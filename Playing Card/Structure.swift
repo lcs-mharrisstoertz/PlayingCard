@@ -106,9 +106,11 @@ struct Structure_Previews: PreviewProvider {
     static var previews: some View {
         Structure()
     }
+    
+    
 }
 
-struct Bird {
+struct BirdTradingCard {
     let birdType: String
     let habitat: String
     let diet: String
@@ -118,3 +120,11 @@ struct Bird {
     let imageName: String
 }
     
+
+let canadaGoose = BirdTradingCard(birdType: "Canada Goose",
+                       habitat: "Temperate regions of North America",
+                       diet: "Aquatic plants, grains, and berries",
+                       appearance: "Large black, white, and brown goose",
+                       favoriteActivity: "Terrorizing people",
+                       funFact: "Canada geese can travel 1,500 miles in a day if the weather permits.",
+                       imageName: "CanadaGoose")

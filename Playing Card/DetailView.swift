@@ -1,15 +1,14 @@
 //
-//  Playing Card 1.swift
+//  DetailView.swift
 //  Playing Card
 //
-//  Created by Morgan Harris-Stoertz on 2023-01-12.
+//  Created by Morgan Harris-Stoertz on 2023-01-15.
 //
 
 import SwiftUI
 
-struct Playing_Card_1: View {
+struct DetailView: View {
     var body: some View {
-        
         VStack{
             Text("Canada Goose")
                 .font(Font.custom("Helvetica", size:35))
@@ -100,13 +99,11 @@ struct Playing_Card_1: View {
                 .listStyle(.plain)
                 .listRowInsets(EdgeInsets(top:0 , leading:100, bottom: 0, trailing: 0))
             }
-        }
-    }
+        }    }
 }
 
-struct Playing_Card_1_Previews: PreviewProvider {
+struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        Playing_Card_1()
+        DetailView()
     }
 }
-
