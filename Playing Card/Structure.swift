@@ -1,15 +1,14 @@
 //
-//  Playing Card 1.swift
+//  Structure.swift
 //  Playing Card
 //
-//  Created by Morgan Harris-Stoertz on 2023-01-12.
+//  Created by Morgan Harris-Stoertz on 2023-01-15.
 //
 
 import SwiftUI
 
-struct Playing_Card_1: View {
+struct Structure: View {
     var body: some View {
-        
         VStack{
             Text("Canada Goose")
                 .font(Font.custom("Helvetica", size:35))
@@ -103,10 +102,16 @@ struct Playing_Card_1: View {
         }
     }
 }
-
-struct Playing_Card_1_Previews: PreviewProvider {
+struct Structure_Previews: PreviewProvider {
     static var previews: some View {
-        Playing_Card_1()
+        Structure()
     }
 }
 
+struct Bird {
+    let birdType: String
+    let habitat: String
+    let diet: String
+    let appearance: String
+    let favoriteActivity: String
+    
