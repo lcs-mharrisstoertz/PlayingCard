@@ -10,83 +10,77 @@ import SwiftUI
 struct Playing_Card_1: View {
     var body: some View {
         
-        ZStack{
-            Color.white
-                .ignoresSafeArea()
+        VStack{
+            Text("Canadian Goose")
+                .font(Font.custom("Helvetica", size:45))
+                .bold()
             
-            VStack(spacing:0){
+            ZStack{
+                Color.purple
+                    .ignoresSafeArea()
                 
-                ZStack{
+                VStack(spacing:0){
                     
-                    Text("Title")
-                        .font(Font.custom("Helvetica", size:50))
-                        .bold()
-                }
-                
-                
-                ZStack {
-                    Color.purple
-                    
-                        .frame(height: 400)
-                    
-                    Color.indigo
-                        .padding()
-                        .frame(height: 400)
-                    
-                    Image("CanadaGoose")
-                        .resizable()
-                        .padding()
-                        .padding()
-                        .frame(height:400)
-                    
-                    HStack{
-                        Spacer()
+                    ZStack {
                         
-                        VStack{
+                        
+                        
+                        Color.indigo
+                            .padding()
+                        
+                        Image("CanadaGoose")
+                            .resizable()
+                            .padding()
+                            .padding()
+                            .frame(height:400)
+                        
+                        HStack{
                             Spacer()
                             
-                            Image("BirdLogo")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height:110)
-                                .padding()
+                            VStack{
+                                Spacer()
+                                
+                                Image("BirdLogo")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(height:110)
+                                    .padding()
+                            }
                         }
-                    }
-                    
-                    
-                    
-                }
-                
-                Text("Bird Info")
-                    .font(.title)
-                    .bold()
-                HStack{
-                    
-                    List{
-                        Text("Item 1")
-                        Text("Item 2")
-                        Text("Item 3")
-                    }
                         
-                    List{
-                        Text("Item 1")
-                        Text("Item 2")
-                        Text("Item 3")
+                        
+                        
                     }
+                    
+                    Text("Bird Info")
+                        .font(.title)
+                        .bold()
+                    HStack{
+                        
+                        List{
+                            Text("Habitat: Temperate regions of North America")
+                            Text("Diet: Aquatic plants, grains, and berries ")
                             
+                        }
+                        
+                        List{
+                            Text("Appearance: Large goose with a black head, white cheeks, and a brown body.")
+                            Text("Favorite Activity: Terrorizing people")
+                        }
+                        
+                    }
+                    
+                    
+                    Text("Fun Fact")
+                        .font(.title2)
+                        .bold()
+                    Text("Canada geese can travel 1,500 miles in a day if the weather permits.")
+                    
+                        .padding()
                 }
-                Spacer()
-              
-                
-                Text("Extra Information")
-                    .font(.title2)
-                    .bold()
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula lacus, feugiat ac ante nec, finibus lacinia urna.")
-                
-                    .padding()
+                .listStyle(.plain)
+                .listRowInsets(EdgeInsets(top:0 , leading:100, bottom: 0, trailing: 0))
             }
-            .listStyle(.plain)
-            .listRowInsets(EdgeInsets(top:0 , leading:100, bottom: 0, trailing: 0))
         }
     }
 }
