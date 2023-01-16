@@ -7,23 +7,16 @@
 
 import SwiftUI
 
-struct BirdTradingCard {
-//MARK: stored properties
+struct BirdTradingCard: View {
+    //MARK: stored properties
 
-    let birdType: String
-    let habitat: String
-    let diet: String
-    let appearance: String
-    let favoriteActivity: String
-    let funFact: String
-    let imageName: String
+    let bird: TradingCardStructure
     
-//MARK: computed properties
-    
+    //MARK: computed properties
     var body: some View {
 
         VStack{
-            Text(birdType)
+            Text(bird.birdType)
                 .font(Font.custom("Helvetica", size:35))
                 .bold()
             
@@ -38,7 +31,7 @@ struct BirdTradingCard {
                         Color.indigo
                             .padding()
                         
-                        Image(imageName)
+                        Image(bird.imageName)
                             .resizable()
                             .padding()
                             .padding()
@@ -75,17 +68,17 @@ struct BirdTradingCard {
                                 
                                 VStack{
                                     
-                                    Text(habitat)
+                                    Text(bird.habitat)
                                     Spacer()
-                                    Text(diet)
+                                    Text(bird.diet)
                                     
                                 }
                                 .padding()
                                 
                                 VStack {
-                                    Text(appearance)
+                                    Text(bird.appearance)
                                     Spacer()
-                                    Text(favoriteActivity)
+                                    Text(bird.favoriteActivity)
                                 }
                                 .padding()
                             }
@@ -93,7 +86,7 @@ struct BirdTradingCard {
                             Text("Fun Fact")
                                 .font(.title2)
                                 .bold()
-                            Text(funFact)
+                            Text(bird.funFact)
                             
                                 .padding()
                             Spacer()  
@@ -109,13 +102,9 @@ struct BirdTradingCard {
 
 struct BirdTradingCard_Previews: PreviewProvider {
     static var previews: some View {
-        
-       let canadaGoose = BirdTradingCard(birdType: "Canada Goose",
-                        habitat: "Temperate regions of North America",
-                        diet: "Aquatic plants, grains, and berries",
-                        appearance: "Large black, white, and brown goose",
-                        favoriteActivity: "Terrorizing people",
-                        funFact: "Canada geese can travel 1,500 miles in a day if the weather permits.",
-                        imageName: "CanadaGoose")
+        BirdTradingCard(bird: canadaGoose)
+       
     }
 }
+
+

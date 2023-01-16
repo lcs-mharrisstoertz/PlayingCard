@@ -11,7 +11,9 @@ import SwiftUI
 struct Playing_CardApp: App {
     var body: some Scene {
         WindowGroup {
-            DetailView()
+            NavigationView{
+                BirdTradingCard(bird: canadaGoose)
+            }
         }
     }
 }
