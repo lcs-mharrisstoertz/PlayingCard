@@ -57,9 +57,6 @@ struct BirdTradingCard {
                                 
                             }
                         }
-                        
-                        
-                        
                     }
                     
                     ZStack{
@@ -91,11 +88,7 @@ struct BirdTradingCard {
                                     Text(favoriteActivity)
                                 }
                                 .padding()
-                                
-                                
-                                
                             }
-                            
                             
                             Text("Fun Fact")
                                 .font(.title2)
@@ -103,9 +96,7 @@ struct BirdTradingCard {
                             Text(funFact)
                             
                                 .padding()
-                            Spacer()
-                            
-                            
+                            Spacer()  
                         }
                     }
                 }
@@ -119,7 +110,7 @@ struct BirdTradingCard {
 struct BirdTradingCard_Previews: PreviewProvider {
     static var previews: some View {
         
-       let canadaGoose = BirdTradingCard (birdType: "Canada Goose",
+       let canadaGoose = BirdTradingCard(birdType: "Canada Goose",
                         habitat: "Temperate regions of North America",
                         diet: "Aquatic plants, grains, and berries",
                         appearance: "Large black, white, and brown goose",
