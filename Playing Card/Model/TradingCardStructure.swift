@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PlayingCard {
+struct TradingCardStructure {
     let birdType: String
     let habitat: String
     let diet: String
@@ -16,3 +16,4 @@ struct PlayingCard {
     let funFact: String
     let imageName: String
 }
+
