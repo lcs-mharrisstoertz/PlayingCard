@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC6F9D4929749C1700F143AC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6F9D4829749C1700F143AC /* DetailView.swift */; };
 		CC6F9D4B29749D2100F143AC /* BirdTradingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6F9D4A29749D2100F143AC /* BirdTradingCard.swift */; };
 		CC6F9D5029758B1000F143AC /* TradingCardStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6F9D4F29758B1000F143AC /* TradingCardStructure.swift */; };
+		CC6F9D522975988B00F143AC /* BirdListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6F9D512975988B00F143AC /* BirdListView.swift */; };
 		CCB02DCA29709EE5001DA32D /* Playing_CardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB02DC929709EE5001DA32D /* Playing_CardApp.swift */; };
 		CCB02DCE29709EFB001DA32D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCB02DCD29709EFB001DA32D /* Assets.xcassets */; };
 		CCB02DD129709EFB001DA32D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCB02DD029709EFB001DA32D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CC6F9D4829749C1700F143AC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CC6F9D4A29749D2100F143AC /* BirdTradingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdTradingCard.swift; sourceTree = "<group>"; };
 		CC6F9D4F29758B1000F143AC /* TradingCardStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardStructure.swift; sourceTree = "<group>"; };
+		CC6F9D512975988B00F143AC /* BirdListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdListView.swift; sourceTree = "<group>"; };
 		CCB02DC629709EE5001DA32D /* Playing Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playing Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB02DC929709EE5001DA32D /* Playing_CardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playing_CardApp.swift; sourceTree = "<group>"; };
 		CCB02DCD29709EFB001DA32D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				CCB02DC929709EE5001DA32D /* Playing_CardApp.swift */,
-				CC6F9D4829749C1700F143AC /* DetailView.swift */,
+				CC6F9D512975988B00F143AC /* BirdListView.swift */,
 				CC6F9D4A29749D2100F143AC /* BirdTradingCard.swift */,
 				CC6F9D4E29758A8100F143AC /* Model */,
 				CCB02DCD29709EFB001DA32D /* Assets.xcassets */,
@@ -154,7 +154,7 @@
 				CC6F9D4B29749D2100F143AC /* BirdTradingCard.swift in Sources */,
 				CCB02DCA29709EE5001DA32D /* Playing_CardApp.swift in Sources */,
 				CC6F9D5029758B1000F143AC /* TradingCardStructure.swift in Sources */,
-				CC6F9D4929749C1700F143AC /* DetailView.swift in Sources */,
+				CC6F9D522975988B00F143AC /* BirdListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
